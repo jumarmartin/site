@@ -1,0 +1,177 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,10pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\robustify\cftdotfill
+%remove when not draft
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  {\setlength{\FrameSep}{\outerbordwidth}
+    
+\textbf{\large #1}
+    
+  }
+}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #3\\
+		\textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+\sffamily
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Jumar Martin} & \textbf{\today} \\
+High School Senior \& Software Developer & jumar@jumart.in \\
+%411 Knothole Ln Charlotte, NC 28214 
+& https://jumart.in \\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+
+	\ressubheading{Phillip O. Berry Academy of Technology}{Diploma, NAF Certificate}{2015 - 2019}
+
+	\begin{itemize}
+		\item {\bf Advanced Placement:} Psychology, Microeconomics, Computer Science A, Human Geography, Calculus AB
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Extracurriculars}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+		\item 
+			\ressubheading{Club President}{WakeUp! Club}{2016 - Present}
+		\begin{itemize}
+		 \resitem{Attained the position of Club President for the 2017-2018 school year. A  School Club rooted in helping the community “Wake Up” to the problems that affects each and every member. Primarily backed by the North Carolina chapter of Teach For America.}
+		\end{itemize}
+
+
+		% \item {\bf Golf Team:} Most Improved Player 2017-2018. Member of the Phillip O. Berry Academy of Technology Golf Team.
+		\item  
+			\ressubheading{Participant}{Lenovo Scholars Network}{2015 - Present}
+		\begin{itemize}
+			\resitem{National mobile app development competition hosted by Lenovo.}
+			\resitem{In 2018 we created Joey, A Just-in-Time, On-Demand Delivery Service. This application went to compete nationally. \texttt{https://devpost.com/software/joey}}
+			\resitem{In 2017 we created AirQI, which sought to educate the populace about air quality and how imperative it is.}
+		\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Volunteer Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+
+	\ressubheading{Photography Assistant}{Flashes of Hope}{2015 - Present}
+
+	\begin{itemize}
+
+		\resitem{Assisted professional photographers in serving children afflicted by cancer and other life-threatening diseases as well as their families by providing portraits of them. }
+	\end{itemize}
+
+\item
+
+	\ressubheading{Administrative Assistant}{Catholic Diocese of Charlotte}{Jun - Aug 2016, 2017 Jun - July 2018}
+
+	\begin{itemize}
+
+		\resitem{Assisted with interviewing the less fortunate, filling out documents that would allow the less fortunate to receive food for the month, and completing clerical work that was imperative in keeping the charity running smoothly.}
+	\end{itemize}
+\item 
+	\ressubheading{Head Junior Counselor}{Infragard Cybercamp}{July 2015, 2016, 2017, 2018}
+	\begin{itemize}
+		\resitem{Facilitated activities that showcased cutting edge network security tools, participated in a tight knit team of counselors throughout the week, updated the camps�� blog daily, and administered a “CTF” (Capture the Flag) competition.}
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Employment Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+
+	\ressubheading{Intelligence Intern}{Executive Partnership for Integrated Collaboration}{September - August 2018}
+
+	\begin{itemize}
+
+		\resitem{Learned the Intelligence Cycle, gathered time-sensitive OSINT (Open Source Intelligence) for various projects, and built and serviced tools used within EPIC’s internal processes and external projects.}
+	\end{itemize}
+
+\item
+
+	\ressubheading{Cybersecurity Intern}{Technology Partners Inc. d.b.a Imagine Software}{June - August 2017}
+
+
+	\begin{itemize}
+
+		\resitem{Tasked with securing the network, cataloging the various amounts of computers, and installing enterprise-grade anti-virus solutions on macOS machines, remotely, as well as various IT-related projects.}
+	\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item {\bf Development:} Swift, Python, C/C++/C\#, Go, Rust, \LaTeX, JavaScript, SAS
+\item {\bf Computer Science:} Algorithms, Data Structures (CLRS)
+
+\end{itemize}
+
+\end{document}
