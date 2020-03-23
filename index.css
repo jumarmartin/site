@@ -18,6 +18,15 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 .container {
     display: grid;
     grid-gap: 4rem;
