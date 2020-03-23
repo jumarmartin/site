@@ -56,6 +56,11 @@ h1 {
     }
 }
 
+
+/*
+    more testing is in order to get this to work, I'm not sure why it does not.
+*/
+
 @media (prefers-color-scheme: dark) {
     .body {
         background-color: rgb(50, 50, 50);
