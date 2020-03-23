@@ -1,4 +1,4 @@
 .firebaserc
 *.pdf
 .firebase/
-
+DS_Store
