@@ -18,6 +18,10 @@ body {
     margin-right: auto;
 }
 
+img {
+    width: 30rem;
+}
+
 .header {
     padding-top: 6rem;
 }
@@ -59,6 +63,13 @@ ul li {
 ul .links li a {
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+.photo-caption {
+    margin : 0;
+    padding: 0;
+    opacity: .5;
+
 }
 
 a {
